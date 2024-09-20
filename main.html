@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Image to Valorant Chat</title>
+    
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- Title -->
+    <h1 class="title">Image to Valorant Chat</h1>
+
+    <!-- Hidden elements for processing -->
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <input type="file" id="imageInput" accept="image/*" aria-label="Upload Image" hidden>
+
+    <!-- Upload and convert button -->
+    <button id="uploadAndConvertButton" aria-label="Upload and Convert Image">Upload & Convert Image</button>
+
+    <!-- Input and result -->
+    <div class="parent">
+        <div class="field">
+            <img id="input_image" class="fit-picture" src="" />
+        </div>
+        <div id="resultField" class="field" style="background-color: #000000;">
+            <pre id="result_text" style="color: #FFFFFF;" aria-live="polite"></pre>
+
+            <!-- Copy result button -->
+            <button id="copyResultButton" class="copy-button">Copy</button>
+        </div>
+    </div>
+
+    <!-- Load JS -->
+    <script src="static/main.js" defer></script>
+</body>
+</html>
